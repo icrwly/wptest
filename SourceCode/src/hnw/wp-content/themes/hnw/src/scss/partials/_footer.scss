@@ -1,0 +1,41 @@
+footer,
+#footer-bumper {
+    padding: 80px 0 0;
+    color: white !important;
+    p {
+        padding: 40px 80px;
+        font-size: 1.5rem;
+        line-height: 1.875rem;
+        font-weight: $font-weight-light;
+    }
+    a {
+        margin-bottom: 80px;
+    }
+    .legal {
+        margin: 0 0 20px 32px;
+        font-size: 0.625rem;
+    }
+    .full-width {
+        justify-content: space-between;        
+        align-items: flex-end;
+        .col {
+            flex: 1 0 auto;
+        }
+        img {
+           width:200px;
+           display: block;
+           margin: 0 0 0 auto;
+        }
+    }
+    .cfa-badge {
+        z-index: 100;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+#footer-bumper {}
+footer {
+    padding: 0;
+}

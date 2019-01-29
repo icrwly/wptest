@@ -1,0 +1,47 @@
+.jumbotron {
+    position: relative;
+    &__background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+    }
+    &__wrapper {
+        padding: 80px 0 125px;
+        position: relative;
+        .col:first-child {
+            // margin-left: 80px;
+            margin-right: 20%;
+            display: flex;
+        }
+        .col {
+            display: none;
+            p {
+                margin-right: 30%;
+            }
+        }
+    }
+    &__header {
+        margin-bottom: 42px;        
+    }
+
+    &__actions {
+        margin-left: 0;
+    }
+    .row {
+        justify-content: flex-start;
+        // margin: 0;
+    }
+    .button {
+        display: inline-block;
+        margin-right: 22px;
+        height: 50px;
+        padding: 0 34px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

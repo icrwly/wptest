@@ -1,0 +1,14 @@
+<div class="jumbotron">
+    <div class="jumbotron__background">{{ background | safe }}</div>
+    <div class="jumbotron__wrapper row">
+        <div class="col">
+            <h1 class="h1 jumbotron__header">{{ header | safe }}</h1>
+            {% if body %}<p>{{body | safe}}</p>{% endif %}
+            <div class="row">
+                {% for button in buttons %}
+                <div>{{ button | safe }}</div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

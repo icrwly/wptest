@@ -1,0 +1,57 @@
+body.logged-in.admin-bar {
+    .nav, .nav--container {
+        top: 32px;
+    }
+}
+
+
+.nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 9;
+    display: none;
+
+    &.open {
+        display: block;
+    }
+
+    &--container {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 360px;
+        height: auto;
+        display: none;
+        display: flex;
+        flex-direction: column;
+        padding: 80px 40px;
+        z-index: 10;
+    }      
+    
+
+    
+
+    ul > li > span, a {
+        font-size: 1.5625rem;
+        font-weight: $font-weight-bold;
+        color: white;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        text-decoration: none;
+        display: block;
+        
+        &.close {
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 28px;
+        }
+    }
+}
