@@ -1,0 +1,58 @@
+main {
+    margin-top: 80px;
+}
+body.logged-in.admin-bar {
+    .site-header {
+        top: 32px;
+    }
+}
+.site-header {
+    background-color: $blue;
+    color: white;
+    padding: 0 14px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    z-index: 10;
+
+    .row {
+        justify-content: space-between;
+        // max-width: none;
+    }
+    .col {
+        flex-direction: row;
+        flex: 0 1 auto;
+        align-items: center;
+    }
+    &__menu-logo {
+        width: 50px;
+        margin: 16px 20px 0 0;
+
+    }
+    &__title {
+        font-weight: $font-weight-bold;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+
+    &__language {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: inline-block; 
+        margin: 0 10px;
+        padding-bottom: 4px;
+        &.active {
+            border-bottom: thin solid white;
+        }
+    }
+
+    &__menu {
+        margin: 0 15px 0 26px;
+        img {
+            width: 24px;
+        }
+    }
+}
